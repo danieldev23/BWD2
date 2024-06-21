@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="" href="/">
+          <img src="./assets/images/logo.png" class="navbar-logo" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> HOME </a>
+          <a href="intro.html" class="navbar-item"> INTRODUCTION </a>
+          <a href="event.html" class="navbar-item"> ACTIVITY </a>
+          <a href="social.html" class="navbar-item"> DISCUSS </a>
+          <a href="" class="navbar-item"> CONTACT </a>
+        </div>
+
+        <div class="navbar-end mr-3">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button register-btn">
+                <strong>Register</strong>
+              </a>
+              <a class="button is-primary register-btn has-text-light">
+                Sign in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="contact-round">
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>
+              Fill out the form and our team will get back to you within 24
+              hours.
+            </p>
+            <ul class="contact-info-ul">
+              <li><i class="fas fa-phone"></i> +84 0344574050</li>
+              <li><i class="fas fa-envelope"></i> support@greenTeam.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Da Nang, Vietnam</li>
+            </ul>
+
+            <!-- <img class="contact-info-logo" src="./imag/logo2.png" alt="logo" /> -->
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="contact-form-row">
+                <div class="contact-form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="name" />
+                </div>
+                <div class="contact-form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="contact-form-group">
+                <label for="subject">Organization</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter your organization"
+                />
+              </div>
+              <div class="contact-form-group">
+                <label for="message">Notes</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your notes"
+                ></textarea>
+              </div>
+              <div class="contact-form-group button-group">
+                <button class="contact-btnSend" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer mt-5">
+      <div class="footer-top">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <div class="footer-column1-top">
+              <img
+                class="logo-column1"
+                src="../assets/images/logo-column1.png"
+                alt="logo"
+              />
+              <div class="footer-column1-title">NO <br />WASTE</div>
+            </div>
+            <div class="footer-column1-main">
+              <p class="footer-column1-desc">
+                Millions of people need to strive for waste reduction, instead
+                of a few achieving that goal perfectly.
+              </p>
+            </div>
+            <div class="footer-column1-bottom">
+              <div class="footer-column1-bottom-item">
+                <img
+                  class="footer-column1-icon"
+                  src="../assets/images/placeholder.png"
+                  alt="icon1"
+                /><span class="footer-column1-iconContent"
+                  >470 Tran Dai Nghia, Ngu Hanh Son, Da Nang.
+                </span>
+              </div>
+              <div class="footer-column1-bottom-item">
+                <img
+                  class="footer-column1-icon"
+                  src="../assets/images/gmail.png"
+                  alt="icon2"
+                /><span class="footer-column1-iconContent"
+                  >dananggreenteam@gmail.com</span
+                >
+              </div>
+              <div class="footer-column1-bottom-item">
+                <img
+                  class="footer-column1-icon"
+                  src="../assets/images/clock.png"
+                  alt="icon3"
+                /><span class="footer-column1-iconContent"
+                  >Monday - Saturday: 7 AM to 10 PM</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Links</h4>
+            <ul class="footer-links">
+              <li class="footer-item">
+                <a class="footer-link" href="/">Home</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="social.html">Discussions</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="event.html">Activities</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-heading">Latest Activities</h4>
+            <div class="footer-column3-item">
+              <img
+                class="footer-column3-imag"
+                src="../assets/images/work.webp"
+                alt="icon2"
+              />
+              <div class="footer-column3-content">
+                <div class="footer-column3-top">
+                  World aims for zero waste: Global efforts to reduce waste
+                </div>
+                <div class="footer-column3-bottom">
+                  <img
+                    class="footer-column3-icon"
+                    src="../assets/images/calendar.png"
+                    alt="icon2"
+                  /><span class="footer-column3-iconContent"
+                    >June 20, 2024</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="footer-column3-item">
+              <img
+                class="footer-column3-imag"
+                src="../assets/images/company.webp"
+                alt="icon2"
+              />
+              <div class="footer-column3-content">
+                <div class="footer-column3-top">
+                  Countries commit to zero waste: United efforts for sustainable
+                  environment
+                </div>
+                <div class="footer-column3-bottom">
+                  <img
+                    class="footer-column3-icon"
+                    src="../assets/images/calendar.png"
+                    alt="icon2"
+                  /><span class="footer-column3-iconContent">July 5, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

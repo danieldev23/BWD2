@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+:root {
+  --light-bg: #fff;
+  --text-color: #1a1d1f;
+  --primary-color: linear-gradient(
+    91.9deg,
+    #46c896 27.8%,
+    #21f190 67%
+  );
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--light-bg);
+  color: var(--text-color);
+}
+.navbar {
+  background: var(--light-bg);
+}
+.navbar-logo {
+  width: 3rem;
+}
+.main-header {
+  /* background: #efefef; */
+  height: inherit !important;
+}
+.large-intro {
+  padding-top: 6rem;
+  background: #15e07e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #15e07e, #12d8fa); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #15e07e, #12d8fa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.content-intro {
+  line-height: 1.25rem;
+}
+.image-intro {
+  width: 30rem;
+  animation: move 3s ease-in-out infinite;
+}
+.register-btn {
+  background: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: none;
+}
+.register-btn:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.register-btn:hover .icon {
+  transform: translate(4px);
+}
+
+.register-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.register-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

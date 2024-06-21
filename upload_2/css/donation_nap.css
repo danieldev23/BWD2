@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif; /* Font mới */
+  background-color: #e0f7ff; /* Màu nền nhẹ nhàng */
+  color: #333; /* Màu chữ chính */
+}
+
+.dnt-container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #ffffff; /* Lớp trong cùng */
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+}
+
+.dnt-header {
+  text-align: center;
+}
+
+.dnt-header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+  background: linear-gradient(to right, #11998e, #38ef7d); /* Gradient mới */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dnt-header h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #11998e; /* Màu từ gradient mới */
+}
+
+.dnt-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dnt-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  padding-top: 30px;
+}
+
+.dnt-qr-container {
+  background-color: #ffffff; /* Màu nền trắng cho QR container */
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(17, 153, 142, 0.2); /* Bóng màu xanh nhẹ */
+  padding: 15px;
+}
+
+.dnt-qr {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem; /* Bo góc QR */
+}
+
+.dnt-right {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dnt-timeOn {
+  text-align: center;
+}
+
+.dnt-timeOn h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #34495e; /* Màu chữ đậm */
+}
+
+.dnt-time {
+  background: linear-gradient(to right, #11998e, #38ef7d); /* Gradient mới */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 10px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.dnt-time-hour {
+  font-size: 1.8em;
+}
+
+.dnt-steps {
+  background-color: #e0f7ff; /* Màu nền pastel nhẹ tông xanh nhạt */
+  padding: 20px;
+  border-radius: 1rem;
+  padding-top: 1px;
+}
+
+.dnt-steps h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #34495e; /* Màu chữ đậm */
+  font-size: 2em;
+}
+
+.dnt-step {
+  display: flex;
+  justify-content: flex-start; /* Căn trái các bước */
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.dnt-step-number {
+  background-color: #11998e; /* Màu từ gradient mới */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 7px 16px;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+.dnt-step-description {
+  align-self: center;
+  color: #34495e; /* Màu chữ đậm */
+  margin-left: 60px; /* Tạo khoảng cách giữa số thứ tự và nội dung */
+}
+.dnt-highlight {
+  color: #11998e; /* Màu từ gradient mới */
+}
+@media (max-width: 1286.02px) {
+  .dnt-content {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768.02px) {
+  .dnt-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dnt-step-description {
+    margin-left: 0;
+  }
+  .dnt-step-description {
+    align-self: unset;
+  }
+  .dnt-right {
+    width: 100%;
+  }
+
+  .dnt-time {
+    flex-direction: column;
+  }
+
+  .dnt-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dnt-step-number,
+  .dnt-step-description {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 440px) {
+  .dnt-step-description {
+    margin-left: 0;
+  }
+}

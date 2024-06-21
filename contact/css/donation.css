@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.donation-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.donation-header {
+  padding: 30px 20px;
+  background-color: #1fa2ff;
+  color: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.donation-header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.donation-description {
+  font-size: 1.1em;
+  margin: 10px 0 0;
+}
+
+.donation-content {
+  padding: 30px 20px;
+}
+
+.donation-info {
+  margin-bottom: 20px;
+}
+
+.donation-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.donation-info p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.donation-info .donation-qr {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.donation-info-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donation-info-ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation-info-ul li i {
+  margin-right: 10px;
+  color: #1fa2ff;
+}
+
+.donation-logo {
+  padding: 20px;
+}
+
+.donation-logo img {
+  width: 120px;
+  height: auto;
+}
