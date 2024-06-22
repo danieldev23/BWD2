@@ -24,7 +24,6 @@ html {
   background: var(--light-bg);
   margin: 0;
   padding: 0;
-  height: 1000vh;
   font-family: "Manrope", sans-serif;
 }
 
@@ -659,3 +658,40 @@ hr {
   border: 1px solid black;
   padding: 1rem;
 }
+
+@media only screen and (max-width: 1000px) {
+  .cell_information > ul {
+   visibility: hidden;
+  }
+  .slide1{
+   display: flex;
+   flex-direction: column;
+  }
+  .slide1 > div >p{
+     font-size: 1rem;
+  }
+  .slide1 > img{
+  width: 100%;
+ }
+ 
+ .slide2 >div{
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ .slide2 > div > div >p{
+    font-size: 1rem;
+ }
+ .slide3 > p{
+   font-size: 1rem;
+ }
+ .slide4 >div> p{
+   font-size: 1rem;
+   width: 100%;
+ }
+ }
+ @media only screen and (max-width: 500px) {
+   .cell_information > p{
+    visibility: hidden;
+   }
+  }
